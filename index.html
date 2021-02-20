@@ -4,14 +4,188 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+        rel="stylesheet"
+      />
+    </head>
     <title>Portfolio</title>
   </head>
   <body>
-    <section class="personal-details"></section>
-    <section class="skills"></section>
-    <section class="projects">
-      <!-- Add JS to filter project by tag-->
+    <section class="personal-details">
+      <img src="/imgs/arms-crossed-profile-pic (copy).jpg" alt="jacob" />
+      <div class="profile-content--wrapper">
+        <div class="name-contact--wrapper">
+          <div class="name-and-job-title">
+            <h1 class="section-title">Jacob Potvin</h1>
+            <h2 class="section-subtitle">Front-end Developer</h2>
+          </div>
+          <address class="contact-info">
+            <a href="mailto:jpotvin@pm.me"
+              ><span class="material-icons social-links"> email </span>
+              jpotvin@pm.me</a
+            >
+            <a href="https://www.linkedin.com/in/jpotvin12/" target="_blank"
+              ><span class="material-icons social-links"> group </span
+              >LinkedIn</a
+            >
+          </address>
+        </div>
+        <div class="description-wrapper">
+          <p>
+            Self-taught and self-starting developer who is is passionate about
+            bringing designs to life and translating ideas in the head to apps
+            on the web.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+            dolor corporis optio asperiores totam cupiditate!
+          </p>
+        </div>
+      </div>
     </section>
+
+    <section class="skills-section">
+      <h1 class="section-title">FRONT END</h1>
+      <div class="skills">
+        <ul>
+          <li class="skill-html">
+            <p>HTML</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+          <li class="skill-js">
+            <p>JavaScript</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+          <li class="skill-css">
+            <p>CSS</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+          <li class="skill-scss">
+            <p>Sass</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+          <li class="skill-boot">
+            <p>Bootstrap</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+          <li class="skill-vue">
+            <p>Vue</p>
+            <div class="bar"><div class="progress"></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="projects-filter">
+      <h1 class="section-title">Projects</h1>
+      <div class="btn-wrapper">
+        <button class="filter-btn">Responsive</button>
+        <button class="filter-btn">JavaScript</button>
+        <button class="filter-btn">Frameworks</button>
+      </div>
+    </div>
+
+    <div class="projects-container">
+      <div class="project project1">
+        <div class="img-wrapper">
+          <img
+            class="screenshot"
+            src="imgs/Screenshot_2021-02-12 404 Error Not Found.png"
+            alt=""
+          />
+        </div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">404 Not Found</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a href="https://new-toe.surge.sh/" target="_blank" class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/404-not-found-challenge"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+      <div class="project project2">
+        <div class="img-wrapper">
+          <img
+            class="screenshot"
+            src="/imgs/Screenshot_2021-02-13 Creative Crew.png"
+            alt=""
+          />
+        </div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">Creative Crew</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a href="https://puzzled-joke.surge.sh/" target="_blank" class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/creative-crew"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+      <div class="project project3">
+        <div class="img-wrapper">
+          <img
+            class="screenshot"
+            src="/imgs/Screenshot_2021-02-16 Interior Consultant.png"
+            alt=""
+          />
+        </div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+          <li>&#35;javascript</li>
+        </ul>
+        <h1 class="project-title">Interior Consultant</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a href="https://rural-bridge.surge.sh/" target="_blank" class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/interior-consultant"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+    </div>
+
     <section class="courses & certificates"></section>
     <section class="hobbies"></section>
   </body>
