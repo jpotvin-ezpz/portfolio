@@ -24,10 +24,9 @@ section {
   grid-column: 3 / span 8;
   border-radius: 12px;
   background: #ffffff;
-  margin: 20px auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  width: 100%;
+  width: 900px;
 }
 .section-title {
   color: #4f4f4f;
@@ -94,6 +93,10 @@ section {
 }
 
 /* Skills */
+.skills-section {
+  width: 900px;
+}
+
 .skills-section > .section-title {
   margin: 20px;
 }
@@ -160,6 +163,7 @@ section {
 /* Projects */
 /* Filter Buttons */
 .projects-filter {
+  width: 900px;
   grid-column: 3 / span 8;
   background: #ffffff;
   border-radius: 12px;
@@ -188,6 +192,7 @@ section {
 }
 /* Project List */
 .projects-container {
+  width: 900px;
   margin: 20px 0;
   grid-column: 3 / span 8;
   display: grid;
@@ -205,11 +210,10 @@ section {
   width: 100%;
   height: 500px;
   grid-column: span 3;
-  transition: all 0.25s ease;
 }
 
 .project.active {
-  display: block;
+  display: initial;
 }
 
 .project > * {
@@ -416,7 +420,23 @@ footer {
   color: #828282;
 }
 
-@media only screen and (max-width: 1339px) {
+@media only screen and (max-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    margin: 0 auto;
+  }
+  .projects-filter {
+    margin: 0 auto;
+  }
+  .projects-container {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 899px) {
   body {
     display: flex;
     flex-direction: column;
@@ -449,6 +469,10 @@ footer {
     margin: 10px 0 0 -10px;
   }
 
+  .skills-section {
+    width: 320px;
+  }
+
   .skills > ul {
     display: flex;
     flex-direction: column;
@@ -468,7 +492,8 @@ footer {
     margin: 0 auto;
   }
   .projects-container {
-    margin: 20px;
+    width: 320px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
   }
