@@ -86,21 +86,16 @@
     <div class="projects-filter">
       <h1 class="section-title">Projects</h1>
       <div class="btn-wrapper">
-        <button class="filter-btn">Responsive</button>
-        <button class="filter-btn">JavaScript</button>
-        <button class="filter-btn">Frameworks</button>
+        <button class="filter-btn active" id="all-btn">All</button>
+        <button class="filter-btn" id="html-btn">HTML &amp; CSS</button>
+        <button class="filter-btn" id="js-btn">JavaScript</button>
+        <button class="filter-btn" id="fw-btn">Frameworks</button>
       </div>
     </div>
 
     <div class="projects-container">
-      <div class="project project1">
-        <div class="img-wrapper">
-          <img
-            class="screenshot"
-            src="imgs/Screenshot_2021-02-12 404 Error Not Found.png"
-            alt=""
-          />
-        </div>
+      <div class="project project1 active">
+        <div class="img-wrapper"></div>
         <ul class="tags">
           <li>&#35;html</li>
           <li>&#35;css</li>
@@ -123,14 +118,9 @@
           >
         </div>
       </div>
-      <div class="project project2">
-        <div class="img-wrapper">
-          <img
-            class="screenshot"
-            src="/imgs/Screenshot_2021-02-13 Creative Crew.png"
-            alt=""
-          />
-        </div>
+
+      <div class="project project2 active">
+        <div class="img-wrapper"></div>
         <ul class="tags">
           <li>&#35;html</li>
           <li>&#35;css</li>
@@ -153,14 +143,9 @@
           >
         </div>
       </div>
-      <div class="project project3">
-        <div class="img-wrapper">
-          <img
-            class="screenshot"
-            src="/imgs/Screenshot_2021-02-16 Interior Consultant.png"
-            alt=""
-          />
-        </div>
+
+      <div class="project project3 active">
+        <div class="img-wrapper"></div>
         <ul class="tags">
           <li>&#35;html</li>
           <li>&#35;css</li>
@@ -184,9 +169,182 @@
           >
         </div>
       </div>
-    </div>
 
-    <section class="courses & certificates"></section>
-    <section class="hobbies"></section>
+      <div class="project project4 active">
+        <div class="img-wrapper"></div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">Recipe Blog</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a
+            href="https://coordinated-pollution.surge.sh/"
+            target="_blank"
+            class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/recipe-blog-challenge"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project project5 active">
+        <div class="img-wrapper"></div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">Gallery Challenge</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a
+            href="https://befitting-dinner.surge.sh/"
+            target="_blank"
+            class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/my-gallery-challenge"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project project6 active">
+        <div class="img-wrapper"></div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">Checkout Page</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a href="https://rural-sweater.surge.sh/" target="_blank" class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/checkout-page-challenge"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+
+      <div class="project project7 active">
+        <div class="img-wrapper"></div>
+        <ul class="tags">
+          <li>&#35;html</li>
+          <li>&#35;css</li>
+          <li>&#35;responsive</li>
+        </ul>
+        <h1 class="project-title">Edie Homepage</h1>
+        <p>
+          Project description -- Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Quos, nostrum!
+        </p>
+        <div class="demo-wrapper">
+          <a
+            href="https://descriptive-noise.surge.sh/"
+            target="_blank"
+            class="demo"
+            >Demo</a
+          >
+          <a
+            href="https://github.com/jpotvin-ezpz/edie-homepage-challenge"
+            target="_blank"
+            class="code"
+            >Code</a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="courses-certificates">
+      <h1 class="section-title">Courses &amp; Certifications</h1>
+      <div class="certifications-wrapper">
+        <div class="cert">
+          <div class="imgs-issued">
+            <img src="/imgs/devchallenges.png" alt="Dev Challenges logo" />
+            <div class="issued">
+              <p class="issueDate section-subtitle">Issued Feb 2021</p>
+              <h2>Responsive Web Developer</h2>
+            </div>
+          </div>
+          <a href="#" target="_blank">See Credential</a>
+        </div>
+
+        <div class="cert">
+          <div class="imgs-issued">
+            <img src="/imgs/fcc-logo.jpeg" alt="Free Code Camp logo" />
+            <div class="issued">
+              <p class="issueDate section-subtitle">Issued Jan 2021</p>
+              <h2>JavaScript Algorithms and Data Structures</h2>
+            </div>
+          </div>
+          <a
+            href="https://www.freecodecamp.org/certification/jpotvin/javascript-algorithms-and-data-structures"
+            target="_blank"
+            >See Credential</a
+          >
+        </div>
+        <div class="cert">
+          <div class="imgs-issued">
+            <img src="/imgs/fcc-logo.jpeg" alt="Free Code Camp logo" />
+            <div class="issued">
+              <p class="issueDate section-subtitle">Issued May 2020</p>
+              <h2>Responsive Web Design</h2>
+            </div>
+          </div>
+          <a
+            href="https://www.freecodecamp.org/certification/jpotvin/responsive-web-design"
+            target="_blank"
+            >See Credential</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="hobbies">
+      <h1 class="section-title">Hobbies</h1>
+      <div class="hobbies-wrapper">
+        <div class="hobby">
+          <div class="hobby-img" id="running"></div>
+          <h2 class="hob-title">Running</h2>
+          <p class="hob-desc">Training for a Half-Marathon in May.</p>
+        </div>
+        <div class="hobby">
+          <div class="hobby-img" id="cooking"></div>
+
+          <h2 class="hob-title">Cooking</h2>
+          <p class="hob-desc">Picked it up during Quarantine.</p>
+        </div>
+        <div class="hobby">
+          <div class="hobby-img" id="reading"></div>
+          <h2 class="hob-title">Reading</h2>
+          <p class="hob-desc">Who's your favorite author?</p>
+        </div>
+      </div>
+    </section>
+    <footer>created by @jpotvin-ezpz - devChallenges.io</footer>
+    <script src="main.js"></script>
   </body>
 </html>

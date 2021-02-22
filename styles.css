@@ -16,6 +16,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1em;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 section {
@@ -194,22 +196,56 @@ section {
 }
 
 .project {
+  display: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   border-radius: 12px;
   border-radius: 12px;
   background: #ffffff;
   width: 100%;
+  height: 500px;
+  grid-column: span 3;
+  transition: all 0.25s ease;
+}
+
+.project.active {
+  display: block;
 }
 
 .project > * {
   margin: 20px;
 }
 
-.project img.screenshot {
+.project .img-wrapper {
+  background-size: cover;
   height: 200px;
-  max-width: 100%;
+  width: 200px;
   border-radius: 12px;
+  margin: 20px auto;
+}
+
+.project1 .img-wrapper {
+  background-image: url("imgs/Screenshot_2021-02-12\ 404\ Error\ Not\ Found.png");
+}
+
+.project2 .img-wrapper {
+  background-image: url("/imgs/creative\ Crew.png");
+}
+.project3 .img-wrapper {
+  background-image: url("imgs/Screenshot_2021-02-16\ Interior\ Consultant.png");
+}
+.project4 .img-wrapper {
+  background-image: url("/imgs/cheescake.png");
+}
+.project5 .img-wrapper {
+  background-image: url("/imgs/galleryproject.png");
+}
+.project6 .img-wrapper {
+  background-image: url("/imgs/checkout-cropped.png");
+}
+
+.project7 .img-wrapper {
+  background-image: url("/imgs/edithomedesktop.jpg");
 }
 
 .project > .tags {
@@ -250,7 +286,7 @@ section {
   align-items: center;
   border-radius: 12px;
   text-decoration: none;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .demo-wrapper .demo {
@@ -275,17 +311,181 @@ section {
   color: #ffffff;
 }
 
-.project1 {
-  grid-column: 1 / span 3;
-}
-
-.project2 {
-  grid-column: 4 / span 3;
-}
-
-.project3 {
-  grid-column: 7 / span 3;
-}
-
 /* Courses & Certifications */
+section.courses-certificates h1 {
+  margin: 20px;
+}
+.certifications-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+  margin: 20px;
+  height: 150px;
+}
+.cert {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.cert h2 {
+  color: #333333;
+  font-size: 16px;
+}
+
+.cert a {
+  margin-top: 10px;
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  text-decoration: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.cert a:hover {
+  background: #2f80ed;
+  color: #ffffff;
+}
+
+.imgs-issued {
+  display: flex;
+}
+
+.imgs-issued img {
+  height: 50px;
+  width: 50px;
+}
+
+.imgs-issued .issued {
+  margin-left: 10px;
+}
 /* Hobbies */
+.hobbies .section-title {
+  margin: 20px;
+}
+
+.hobbies-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6px;
+  margin: 20px;
+}
+
+.hobby-img {
+  height: 125px;
+  width: 275px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.hobby-img#running {
+  background-image: url(/imgs/sage-friedman-TT2J5t1QaMw-unsplash.jpg);
+}
+
+.hobby-img#cooking {
+  background-image: url(/imgs/sandra-seitamaa-xuStICQ3qRg-unsplash.jpg);
+}
+
+.hobby-img#reading {
+  background-image: url(/imgs/j-zamora-GWOTvo3qq7U-unsplash.jpg);
+}
+.hobby .hob-title {
+  margin-top: 20px;
+  color: #333333;
+  font-size: 18px;
+}
+.hobby .hob-desc {
+  margin: 10px auto;
+  color: #828282;
+  font-size: 14px;
+}
+
+footer {
+  grid-column: span 12;
+  text-align: center;
+  margin: 5vh;
+  color: #828282;
+}
+
+@media only screen and (max-width: 1339px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    margin: 20px auto;
+    width: 320px;
+  }
+
+  .personal-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-details > img {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .profile-content--wrapper {
+    margin: 20px;
+  }
+
+  .name-contact--wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin: 10px 0 0 -10px;
+  }
+
+  .skills > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-filter {
+    width: 320px;
+    margin: 20px auto 0 auto;
+  }
+
+  .filter-btn {
+    margin: 5px;
+  }
+
+  .project {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .projects-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .certifications-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+  .cert {
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .hobbies-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+} ;
